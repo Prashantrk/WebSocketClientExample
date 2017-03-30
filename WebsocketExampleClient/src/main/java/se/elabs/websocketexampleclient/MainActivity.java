@@ -96,7 +96,8 @@ public class MainActivity extends Activity {
                     @Override
                     public void run() {
                         TextView textView = (TextView)findViewById(R.id.messages);
-                        textView.setText(textView.getText() + "\n" + message);
+
+                        textView.setText(textView.getText() + "\n" +"Server: "+ message);
                     }
                 });
             }
